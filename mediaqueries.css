@@ -1,0 +1,48 @@
+
+
+/* --- 4. Mobile Responsiveness (Media Queries) --- */
+
+/* Tablets and smaller (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .time {
+    min-width: 80px;
+    padding: 15px;
+  }
+
+  .time h2 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Mobile Phones (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .hero {
+    padding: 10px; /* Prevents edge-to-edge touching */
+    height: auto; /* Allows content to expand vertically if needed */
+    min-height: 100vh;
+  }
+
+  h1 {
+    font-size: 1.8rem; /* Significantly smaller for phones */
+    margin-bottom: 10px;
+  }
+
+  .timebox {
+    gap: 15px; /* Tight spacing */
+    flex-wrap: nowrap; /* Allows boxes to drop to next line if needed */
+    justify-content: center;
+
+  }
+
+  .time h2 {
+    font-size: 2rem; /* Fits comfortably on narrow screens */
+  }
+
+  .time p {
+    font-size: 0.8rem; /* Optional: Scale down labels too */
+  }
+}
